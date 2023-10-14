@@ -26,8 +26,4 @@
     @import '@/assets/electro/css/nouislider.min.css';
     @import '@/assets/electro/css/style.css';
     @import 'bootstrap/dist/css/bootstrap.min.css';
-   
-
-
-    
 </style>
