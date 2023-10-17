@@ -13,6 +13,9 @@
 	});
 
 	/////////////////////////////////////////
+// main.js
+
+
 
 	// Products Slick
 	$('.products-slick').each(function() {

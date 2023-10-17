@@ -16,7 +16,40 @@
             Top,
             Sec,
             Foot,
+        },
+        mounted() {
+     const scriptPaths = [
+       '/electro/js/jquery.min.js',
+       '/electro/js/bootstrap.min.js',
+       '/electro/js/slick.min.js',
+       '/electro/js/nouislider.min.js',
+       '/electro/js/jquery.zoom.min.js',
+       '/electro/js/main.js',
+   
+        ];
+
+        const loadScript = (path) => {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = path;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.body.appendChild(script);
+        });
+        };
+
+        const loadScripts = async () => {
+        try {
+            await loadScript(scriptPaths[0]); // Load jQuery first
+            for (let i = 1; i < scriptPaths.length; i++) {
+            await loadScript(scriptPaths[i]);
+            }
+        } catch (error) {
+            console.error('Failed to load scripts:', error);
         }
+        };
+        loadScripts();
+    }
     }
 </script>
 <style>
