@@ -22,7 +22,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
     @import 'slick-carousel/slick/slick.css';
-
+    @import 'nouislider/dist/nouislider.min.css';
     @import 'slick-carousel/slick/slick-theme.css';
     @import '@/assets/electro/css/style.css';
     @import 'bootstrap/dist/css/bootstrap.min.css';
